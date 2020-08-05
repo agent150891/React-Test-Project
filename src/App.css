@@ -1,0 +1,309 @@
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url("./fonts/Roboto-Regular.ttf");
+}
+
+body {
+  background: url("./images/wallpaper.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Roboto Regular';
+  cursor: default;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background: #525252;
+  height: 5vh;
+}
+
+.logout {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding: 10px 15px;
+  background: #DC002B;
+  font-size: 1vw;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.logout:hover {
+  background: #DF4664;
+}
+
+/* offer */
+
+.main-content {
+  height: 87vh;
+}
+
+.offer {
+  width: 32%;
+  background:#DEDDDD;
+  margin: 20px 0 20px 20px;
+  box-shadow: 1px 2px 4px;
+}
+
+.offer-title {
+  font-size: 1.4vw;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #BBE8E6;
+}
+
+.list-item {
+  list-style: none;
+  margin-bottom: 5px;
+  font-size: 1.3vw;
+}
+
+.list-item:last-child {
+  margin-bottom: 0;
+}
+
+.price {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 20px;
+}
+
+.price-logo {
+  width: 13%;
+}
+
+.current-price {
+  font-size: 1.5vw;
+}
+
+.former-price {
+  font-size: 1vw;
+  text-decoration: line-through;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.offer-button {
+  width: 30%;
+  align-self: center;
+  background: #28B69F;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 1vw;
+  outline: none;
+}
+
+.offer-button:hover {
+  background: #068973 ;
+}
+
+.offer-button:disabled {
+  background: #94B6B1;
+  cursor: default;
+}
+
+/* form */
+
+.form {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 27%;
+  margin: 0 0 20px 20px;
+  padding: 10px 20px;
+  background: #DEDDDD;
+  box-shadow: 1px 2px 4px;
+}
+
+.close-form {
+  position: absolute;
+  right: 10px;
+  width: 3%;
+  cursor: pointer;
+}
+
+.form-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+}
+
+.input-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.form-input-img {
+  width: 8%;
+  margin-right: 10px;
+}
+
+.form-input-field {
+  width: 70%;
+  border-radius: 3px;
+  border: 1px solid #4B766F;
+  padding: 7px;
+  font-size: 0.9vw;
+}
+
+.form-input input:focus {
+  outline: none;
+  border: 1px solid #28B69F ;
+}
+
+.error {
+  align-self: center;
+  margin-top: 5px;
+  color: #DC002B;
+  font-size: 0.9vw;
+}
+
+.form-button {
+  width: 30%;
+  align-self: center;
+  margin-top: 5px;
+  background: #28B69F;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1vw;
+  outline: none;
+}
+
+.form-button:hover {
+  background: #068973 ;
+}
+
+.submit-message {
+  align-self: center;
+  font-size: 1.2vw;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2vh;
+  padding: 10px 0;
+  background: #525252;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.footer-logo {
+  width: 8%;
+  margin-right: 5px;
+}
+
+.all-rights-reserved {
+  font-size: 1.1vw;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 1280px) {
+  .offer {
+    width: 40%;
+  }
+  .form {
+    width: 35%;
+  }
+  .logout {
+    font-size: 1.2vw;
+  }
+  .error {
+    font-size: 1.1vw;
+  }
+  .form-input {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logout {
+    font-size: 1.6vw;
+  }
+  .offer {
+    margin: 20px auto;
+    width: 60%;
+  }
+  .form {
+    margin: 0 auto;
+    width: 55%;
+  }
+  .current-price {
+    font-size: 3vw;
+  }
+  .former-price {
+    font-size: 2vw;
+  }
+  .list-item {
+    font-size: 2.2vw;
+  }
+  .offer-title {
+    font-size: 3vw;
+  }
+  .offer-button {
+    font-size: 2vw;
+  }
+  .form-button {
+    font-size: 2vw;
+  }
+  .form-title {
+    font-size: 3vw;
+  }
+  .form-input input {
+    font-size: 2vw;
+  }
+  .footer-logo {
+    width: 11%;
+  }
+  .all-rights-reserved {
+    font-size: 1.5vw;
+  }
+  .submit-message {
+    font-size: 1.8vw;
+  }
+  .error {
+    font-size: 1.5vw;
+  }
+  .form-input {
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-input {
+    height: 60px;
+  }
+}
