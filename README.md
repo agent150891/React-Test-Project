@@ -18,7 +18,7 @@ It checks whether the input information matches form filling requirements or not
 
 ## Browsing the project
 
-The are few simple steps to view the project:
+The are few steps to view the project:
 1) git clone "project-url" to clone the project.
 2) npm install to install all the necessary node modules.
 3) npm start to start the project.
